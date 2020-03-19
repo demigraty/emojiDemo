@@ -1,0 +1,76 @@
+$emojiCol: lightblue;
+
+.emoji-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 1% auto;
+
+  font-family: "Tahoma", "Helvetica Neue", sans-serif;
+}
+
+.emoji-wrapper > input {
+  flex-basis: 100%;
+  margin-bottom: 1%;
+}
+
+.emoji-wrapper > p {
+  text-align: center;
+}
+
+.emoji-box {
+  box-sizing: border-box;
+  margin-bottom: 1%;
+  background-color: $emojiCol;
+  padding-left: 3%;
+
+  p {
+    padding: 0 1%;
+    font-weight: 600;
+    font-size: large;
+    // deal with chrome css defaults
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+  }
+
+  .myButton {
+    box-shadow: inset 0px -3px 7px 0px pink;
+    background-color: pink;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+
+    font-size: 15px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+  }
+
+  .myButton:hover {
+    background-color: #0688fa;
+  }
+
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.emo-input {
+  padding: 2%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: medium;
+}
